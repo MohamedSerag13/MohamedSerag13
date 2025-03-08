@@ -60,17 +60,8 @@ I thrive in **fast-paced environments**, solving complex problems, and **collabo
 
 ---
 
-### 🚀 Happy Coding! 😊  
-### As a Cloud & DevOps Engineer:
-<p align="center">
-  <img src="https://simplecoding.dev/assets/devops.gif" alt="Cloud & DevOps Engineer" />
-</p>
 
----
 
-#### <p align="left">
-  <img src="https://komarev.com/ghpvc/?username=MohamedSerag13" alt="Profile Views" />
-</p>
 
 <!--
 **MohamedSerag13/MohamedSerag13** is a ✨ special ✨ repository because its `README.md` appears on your GitHub profile.
