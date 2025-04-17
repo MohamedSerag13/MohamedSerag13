@@ -1,0 +1,481 @@
+{
+  "name": "name",
+  "lang": "english",
+  "topHeader": {
+    "weatherStatus": "cloud",
+    "date": "date",
+    "time": "time",
+    "location": "Riyadh"
+  },
+  "alertReservedMessage": "This time is already booked.",
+
+  "accept": "accept",
+  "online": "online",
+  "homeTitle": "King Abdulaziz Complex for Endowment Libraries",
+  "noComment": "there is no comment",
+  "search": "Search",
+  "AdvancedSearch": "Advanced Search",
+  "UnifiedSearch": {
+    "title": "Unified Search",
+    "addToList": "Add to List",
+
+    "hero": {
+      "title": "Search, Discover, Share",
+      "subtitle": "Access the content you need across all portals of the King Abdulaziz Complex for Endowment Libraries through unified search"
+    },
+    "SearchResults": "Search results",
+    "search": "Search",
+    "advancedSearch": "Advanced Search",
+    "searchHistory": "Search History",
+    "clearAll": "Clear All",
+    "searchPlaceholder": "The search term will appear here in unified search",
+    "searchGuidelines": "Search Guidelines",
+    "advancedSearchGuidelines": "Advanced Search Guidelines",
+    "searchOperatorsGuidelines": "Search Operators Guidelines",
+    "visit": "Visit",
+    "collections": "Collections",
+    "description": "Description",
+    "comments": "Comments",
+    "similar_items": "Similar Items",
+    "staff_view": "Staff View"
+  },
+  "navbar": {
+    "home": " Home",
+    "complexGated": "Complex gates",
+    "about": "About Us",
+    "services": "Services",
+    "MediaCenter": "Media Center",
+    "Employment": "Employment",
+    "contact": "Contact Us",
+    "dspace": "Dspace",
+    "Quran": "Qur’an",
+    "signIn": "Sign In",
+    "search": "Search",
+    "language": "العربية",
+    "digitalStore": "Digital Repository",
+    "scienceCommittee": "Scientific Journal",
+    "Training": "Training"
+  },
+  "underConstruction": "Soon",
+  "shared": {
+    "reset": "Reset",
+    "sar": "Sar",
+    "subject": "Subject",
+    "publicationDate": "Request Date",
+    "publishBook": "Upload Publication",
+    "publicationType": "Publication Type",
+    "publishedBook": "Published Book",
+    "termsAndCondations": "Terms and Conditions",
+    "formatDate": "dd/MM/yyyy",
+    "requestUpdated": "Request updated successfully",
+    "durationInterval": "Duration",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "learnMore": "Read More",
+    "update": "Update",
+    "success": "Success",
+    "requestSent": "Request Sent successfully",
+    "add": "Add",
+    "expensiveItem": " Expensive Item",
+    "Quran": "Qur’an",
+    "schema": "manuscript",
+    "library": "Endowment Library",
+
+    "rareBook": "Rare book",
+    "relatedEvents": "Related Events",
+    "showMore": "Show More",
+    "readMore": "Read More",
+    "bookNow": "Book Now",
+    "moreDetails": "More Details",
+    "showAll": "Show All",
+    "thisWeek": "This Week",
+    "thisMonth": "This Month",
+    "nextWeek": "This Year",
+    "visitTypes": "Type of Visit",
+    "hallTypes": "Type of Hall",
+    "back": "back",
+    "next": "next",
+    "date": "Date",
+    "Attachments": "Attachments",
+    "Attachment": "Attachment",
+
+    "uploadFiles": "Upload Files",
+    "MaxSize": "Max Size",
+    "MB": "MB",
+    "free": "Free",
+    "choseService": "Choose Service",
+    "contactUs": "Contact Us",
+    "sendRequest": "Send Request",
+    "faq": "FAQ",
+    "email": "Email",
+    "newAccount": "New Account",
+    "login": "Login",
+    "visitDate": "Visit Date",
+    "fromTime": "From (Time)",
+    "toTime": "To (Time)",
+    "mentionReason": "Mention the reason",
+    "all": "All",
+    "feedback": "Suggestions and Complaints",
+    "relatedNewsAndArticles": " Related News and Articles"
+  },
+  "serviceRequest": {
+    "failTitle": "An error occurred",
+    "failSubTitle": "Please try again or contact technical support",
+    "successTitle": "Your request has been submitted successfully",
+    "successRatingTitle": "Your rating has been submitted successfully",
+    "successRequestSubTitle": "Your request will be reviewed by the complex staff. If it meets the required conditions, it will be approved as soon as possible.",
+    "successGeneralSubTitle": "The action was successfully completed. You can check for updates at any time.",
+    "updateSuccessTitle": "Modification successful",
+    "updateSuccessSubTitle": "The new modifications have been saved successfully. You can check for updates at any time.",
+    "successApproveRequestTitle": "The request has been approved successfully.",
+    "successRejectRequestTitle": "The request has been rejected successfully.",
+    "failApproveRequestTitle": "The request approval process failed.",
+    "failRejectRequestTitle": "The request rejection process failed.",
+    "successReturnRequestTitle": "The request has been returned successfully.",
+    "failReturnRequestTitle": "The request return process failed.",
+    "successFeesRequestTitle": "The fees have been submitted successfully.",
+    "failFeesRequestTitle": "The fees submission process failed."
+  },
+  "goToMyRequest": "Go to my requests",
+  "goToHome": "Go to home",
+  "phoneNumberRequired": "Phone number is required.",
+  "invalidPhoneNumber": "Invalid phone number.",
+  "home": " Home",
+  "visitType": "Visit Type",
+  "aboutUs": "About Us",
+  "contactUs": "Contact Us",
+  "contactUs__description": "Feel free to contact us 24/7 with any questions or service requests. We are here waiting for you and will be ready to respond as quickly as possible.",
+  "Commissions": "Committees",
+  "faqs": "faqs",
+  "privacyPolicy": "privacy Policy",
+  "newsDetails": "News Details",
+  "events": "Events",
+  "eventsDetails": "Event Details",
+  "aboutUsPage": {
+    "title": "About the Complex",
+    "title2": "About King Abdulaziz Complex",
+    "vision": "Vision",
+    "message": "Message",
+    "objectives": "Objectives",
+    "values": "Values"
+  },
+
+  "contactUsForm": {
+    "firstName": "First Name",
+    "firstNamePlaceholder": "Enter your first name",
+    "lastName": "Last Name",
+    "lastNamePlaceholder": "Enter your last name",
+    "email": "Email",
+    "emailPlaceholder": "Enter your email",
+    "phoneNumber": "Phone Number",
+    "phoneNumberPlaceholder": "Enter your phone number",
+    "subject": "Subject",
+    "subjectPlaceholder": "Enter the subject",
+    "category": "Category",
+    "categoryPlaceholder": "Select a category",
+    "howHelpYou": "How can we help you?",
+    "howHelpYouPlaceholder": "Tell us how we can help you"
+  },
+
+  "support": {
+    "phoneNumber": "Phone Number",
+    "sms": "SMS",
+    "email": "Email",
+    "fax": "Fax",
+    "location": "Location",
+    "followUs": "Follow Us",
+    "emergcey": "Emergency Contacts",
+    "civilDefense": "Civil Defense",
+    "police": "Police",
+    "ambulance": "Ambulance",
+    "showMore": "Show More"
+  },
+
+  "siteMap": {
+    "openingHours": "Opening Hours",
+    "title": "We are very happy to have you visit us.",
+    "description": "You will find rare manuscripts and archaeological artifacts that tell stories from the ancient past and open windows on immortal eras and civilizations.",
+    "getDirections": "Get Directions",
+    "requestVist": "Request a Visit"
+  },
+  "uploadDocument": {
+    "title": "Upload payment documents",
+    "label": "Upload Document"
+  },
+  "newsAndArticles": "News and Articles",
+  "LatestNews": "Latest News",
+  "latestDspace": "Latest additions to the digital repository",
+
+  "eventsAndActions": "Events and Actions",
+  "culturalActivities": "Scientific and cultural activities",
+
+  "comunityServices": "Community Services",
+  "partnersSection": "Partners",
+
+  "dspace": "Latest Additions to the Digital Repository",
+  "stepper": {
+    "fullName": "Full Name",
+    "phoneNumber": "Phone Number",
+    "email": "Email",
+    "needGuide": "I need a tour guide during my visit",
+    "mentionReason": "Mention the reason",
+    "agreeConditions": "I agree to the terms and conditions I have read",
+    "disabilityMsg": "Disabality Check"
+  },
+  "from": "From",
+  "to": "To",
+  "profile": {
+    "feesRequired": "Required Service Fees",
+    "myServices": "My Services",
+    "summary": "Summary",
+    "requestDetails": "Request Details",
+    "currentServices": "Current Services",
+    "inProgressServices": "In-Progress Services",
+    "completedServices": "Completed Services",
+    "TrackRequestStatus": "Track request status",
+    "search": "Search for..",
+    "download": "Download",
+
+    "selectDuration": "Select Duration",
+    "selectServiceType": "Select Service Type",
+    "backToRequests": "Back to Requests",
+    "yes": "Yes",
+    "no": "No",
+    "bookType": "Type of Visit",
+    "bookDate": "Booking Date",
+    "paymentReceipt": "Payment Receipt",
+    "comment": "Comments",
+    "personalInfo": "Personal Information",
+    "requestInfo": "Request Information",
+    "termsConditions": "Terms and Conditions",
+    "serviceName": "Service Name",
+    "requestTime": "Request Time",
+    "status": "Status",
+    "stage": "Stage",
+    "submitRequest": "Submit Request",
+    "approvalAuthority": "Approval Authority",
+    "requestStatus": "Request Status",
+    "successful": "Successful",
+    "underReview": "Under Review",
+    "InProgress": "In Progress",
+
+    "museumVisit": "Museum Visit Request",
+    "user": "User",
+    "fullName": "Full Name",
+    "firstName": "First Name",
+    "edit": "Edit",
+    "lastName": "Last Name",
+    "phoneNumber": "Phone Number",
+    "dateOfBirth": "Date of Birth",
+    "visitType": "Visit Type",
+    "needsTourGuide": "Needs a Tour Guide?",
+    "reason": "Reason",
+    "email": "Email",
+    "time": "Time",
+    "visitDate": "Visit Date",
+    "personalFile": "Personal File",
+    "editImage": "Edit Image",
+    "deleteImage": "Delete Image",
+    "editPersonalInfo": "Edit Personal Information",
+    "changePassword": "Change Password",
+    "editPassword": "Edit Password",
+    "currentPassword": "Current Password",
+    "newPassword": "New Password",
+    "confirmPassword": "Confirm Password",
+    "passwordMismatch": "Password Mismatch",
+    "uploadImageNote": "Please upload a JPEG, PNG or GIF file. The maximum file size is 10MB.",
+
+    "saveChanges": "Save Changes",
+    "cancel": "Cancel",
+
+    "logout": {
+      "title": "Are you sure you want to log out?",
+      "message": "Additional content is written here in case the notification message needs further explanation or clarification."
+    },
+    "actions": {
+      "uploadDocument": "Upload Document",
+      "updateRequest": "Update Request",
+      "acceptRequestForFree": "Accept Request Free",
+      "adjustfees": "Fees",
+      "rejectRequest": "reject Request",
+
+      "returnRequestToUser": "Return Request To User",
+      "returnRequestToEmployee": "Reject Request To Employee",
+      "editRequest": "Edit Request",
+      "viewDetails": "View Details",
+      "accept": "Accept Request"
+    },
+    "requestNumber": "Request Number",
+    "requestDate": "Request Date",
+    "requestedBy": "Requested By",
+    "tableActions": "Actions",
+    "sidebar": {
+      "userRequests": "User Requests",
+      "personalInfo": "Personal Information",
+      "myServices": "My Services",
+      "changePassword": "Change Password",
+      "logout": "Logout",
+      "serviceList": "Services List"
+    }
+  },
+
+  "services": {
+    "portalServices": "Digital Complex Services",
+    "rate": "Rating"
+  },
+  "serviceInfo": {
+    "serviceLevelAgreement": "Service Level Agreement",
+    "requestService": "Request Service"
+  },
+  "serviceSupport": {
+    "serviceCost": "Service Fees",
+    "serviceChannels": "Service Channels",
+    "serviceDuration": "Service Duration",
+    "targetAudiance": "Target Audience",
+    "applications": "Web and Mobile Applications",
+    "phone": "Phone"
+  },
+  "serviceContent": {
+    "steps": "Service Steps",
+    "requiredInfo": "Required Information"
+  },
+  "serviceComments": {
+    "daysAgo": "2 days ago",
+    "comments": "Feedback",
+    "commentsAndSuggesstionsDescription": "To ask any questions or provide feedback regarding government services, please fill out the necessary information.",
+    "commentsAndSuggesstions": "Feedback and Recommendation",
+    "contactUs": "Contact Us"
+  },
+  "serviceRating": {
+    "title": "This service is rated with an average of",
+    "rate": "Rate",
+    "rateThisService": "Rate This Service"
+  },
+  "footer": {
+    "importantlinks": "Important Links",
+    "aboutus": "About the Complex",
+    "Commissions": "Committees",
+    "administration": "Administration",
+    "learningAndTraining": "Learning and Training",
+    "accessibilityTools": "Accessibility Tools",
+    "followUs": "Follow Us On",
+    "login": "Login",
+    "newAccount": "New Account",
+    "helpLinks": "Help Links",
+    "paperwork": "Endowment libraries",
+    "digitalStore": "Digital Repository",
+    "scienceCommittee": "Scientific Journal",
+    "communityGate": "Complex Gate",
+    "communityGates": "Complex Gates",
+    "structure": "Organizational Structure",
+    "rights": "All rights reserved to King Abdulaziz Complex for Endowment Libraries © 2024"
+  },
+  "dialogs": {
+    "rejectRequest": {
+      "title": "Reject Request",
+      "label": "Leave a Reason for Rejection"
+    },
+    "AcceptRequest": {
+      "title": "Are you sure you want to accept Request ?"
+    },
+    "AcceptRequestFree": {
+      "title": "Are you sure you want to accept this request for free ?"
+    },
+    "addFees": {
+      "title": "Add Fees",
+      "add": "Add Fees",
+      "fees": "Request Fees",
+      "upload": "Upload"
+    },
+    "returnRequest": {
+      "title": "Return Request",
+      "label": "Leave Your Notes Here"
+    },
+    "rating": {
+      "title": "How was your experience?",
+      "description": "Please rate your experience with us and your satisfaction with the quality of performance and level of service provided.",
+      "label": "Do you have a specific comment or point of view you would like to express?",
+      "placeHolder": "Write your comments here..."
+    }
+  },
+  "sideBar": {
+    "home": "Home",
+    "statistics": "Statistics",
+    "services": "Services",
+    "community": " Community ",
+    "dspace": "Digital Repository",
+    "newsAndArticles": "News",
+    "events": "Events",
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us"
+  },
+
+  "words": {
+    "Chairman": "Speech of the Chairman of the Board of Trustees",
+    "Secretary": "Speech of the Secretary-General"
+  },
+  "send": "Send",
+  "cancel": "Cancel",
+  "Accepted": "Accepted",
+  "Rejected": "Rejected",
+  "serviceTable": {
+    "Service": "Service ",
+    "ServiceAvailability": "Electronic Service Availability",
+    "ServiceElectronic": "Electronic services",
+    "Book": "Publish a Book",
+    "availability": "24/7",
+    "Research": "Publish Research",
+    "Digitization": "Digitization Services",
+    "Manuscript": "Request a Manuscript / Rare Book Image",
+    "Complex": "Visit the Complex",
+    "Restoration": "Restoration, Sterilization, and Binding Services",
+    "Libraries": "Add Libraries",
+    "Authenticity": "Request a Verification and Authenticity Certificate",
+    "Hall": "Request Hall Reservation",
+    "ResearchResearch": "Request a Research Consultation",
+    "Endowment": "Endowment and Donation - Library / Manuscript"
+  },
+  "ServiceLevelAgreement": {
+    "title": "Service Level Agreement",
+    "description": "In alignment with the directives of the Saudi Data and Artificial Intelligence Authority (SDAIA) to enhance the quality of services provided to beneficiaries through digital services, and in accordance with the directives of the wise leadership to exert all efforts to achieve the satisfaction of beneficiaries, including citizens and partners, by making the external portal services of SDAIA and electronic services, as well as smart devices, available in the easiest and most convenient ways. This does not include the time taken to process transactions by a third party, such as other government entities, in cases where the nature of the transactions requires it."
+  },
+  "Mechanisms": {
+    "title": "Providing Mechanisms for Communication and Participation",
+    "description": "The Authority is committed to interact and respond to inquiries received through the website"
+  },
+  "help": {
+    "title": "Help and Support",
+    "description": "The SDAIA website provides assistance and support to beneficiaries in a way that accommodates the largest number of visitors. This is done by providing readable content, multimedia, and detailed information, in addition to some support means such as: communication channels ,suggestions and complaints and frequently asked questions"
+  },
+  "organizationalStructure": {
+    "title": "Organizational Structure",
+    "description": "An illustrative diagram of the organizational structure of the complex, containing all the departments of the complex, the board of trustees, and the committees.",
+    "categories": {
+      "boardOfTrustees": "Board of Trustees",
+      "committees": "Committees",
+      "generalDepartments": "General Departments",
+      "departments": "Departments"
+    },
+    "downloadButton": "Download Diagram"
+  },
+  "availableAppointments": "Available Appointments",
+  "toaster": {
+    "error": "Error",
+    "allowedFileNumber": "The number of attached files must be less than",
+    "allowedFileSize": "The size of the attached file must be less than",
+    "allowedFileExtension": "The attached file type must be one of",
+    "coruptedFile": "the file you are uploading is corrupted file"
+  },
+  "fallback": {
+    "errorTitle": "An Error Occurred",
+    "errorNotFoundSubTitle": "Sorry, we couldn't find the page you're looking for.",
+    "serverErrorSubTitle": "Sorry, we encountered a server issue. We're working on it, please try again later.",
+    "noResultTitle": "No Results!",
+    "noResultSubTitle": "Sorry, we couldn't find the results you're looking for.",
+    "goToHomePage": "Return to Homepage"
+  },
+  "ViewCommittee": "View Committee",
+  "member": "members",
+  "youHaveNewComment": "You have new comment"
+}

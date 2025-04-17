@@ -1,0 +1,110 @@
+// Variables
+@import "../helpers/variables";
+
+//Mixins
+@import "../helpers/mixins";
+
+.nav.nav-pills {
+  position: relative;
+  padding: 0;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  @media screen and (max-width: 768px) {
+    gap: 10px;
+  }
+
+  &.tab__bottom {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute; 
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      border-radius: 9999px;
+      background: #d2d6db;
+      z-index: 0;
+      height: 3px;
+    }
+  }
+
+  li {
+    height: fit-content;
+
+    padding: 9px;
+    padding-bottom: 0;
+    position: relative;
+    border-radius: 4px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+      width: calc(100% - 18px);
+      margin: auto;
+      border-radius: 9999px;
+      background: #161616;
+      z-index: 2;
+      height: 3px;
+      visibility: hidden;
+    }
+
+    &:hover {
+      background-color: #eee;
+
+      &::before {
+        visibility: visible;
+      }
+
+      .nav-link {
+        color: #161616;
+      }
+    }
+
+    .nav-link {
+      background-color: transparent;
+      color: #384250;
+      /* Text sm/Medium */
+      font-family: "IBM Plex Sans Arabic";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px;
+      padding: 0;
+      padding-bottom: 9px;
+      /* 142.857% */
+    }
+
+    .nav-link.active,
+    .show > .nav-link {
+      position: relative;
+      color: #161616;
+
+      /* Text sm/Bold */
+      font-family: "IBM Plex Sans Arabic";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 20px;
+      /* 142.857% */
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        border-radius: 9999px;
+        background: #1b8354;
+        z-index: 1;
+        height: 3px;
+      }
+    }
+  }
+}

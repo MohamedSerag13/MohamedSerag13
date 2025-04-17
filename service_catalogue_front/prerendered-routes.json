@@ -1,0 +1,30 @@
+{
+  "routes": [
+    "/",
+    "/about-us",
+    "/commissions",
+    "/contact-us",
+    "/events",
+    "/faqs",
+    "/home",
+    "/login",
+    "/news",
+    "/notfound",
+    "/organizational-structure",
+    "/privacy-policy",
+    "/profile",
+    "/profile/employee-info",
+    "/profile/employee-info/details",
+    "/profile/employee-info/list",
+    "/profile/info",
+    "/profile/my-services",
+    "/profile/my-services/details",
+    "/profile/my-services/list",
+    "/profile/update-password",
+    "/profile/user-info",
+    "/profile/user-info/details",
+    "/profile/user-info/list",
+    "/service-level-agreement",
+    "/signin-oidc"
+  ]
+}

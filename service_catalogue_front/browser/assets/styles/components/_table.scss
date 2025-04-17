@@ -1,0 +1,98 @@
+// Variables
+@import "../helpers/variables";
+
+//Mixins
+@import "../helpers/mixins";
+
+.table__responsive {
+  overflow: auto;
+  max-width: 700px;
+  max-width: 100%;
+}
+
+table.custom__table {
+  // border: 1px solid #d2d6db;
+
+  width: 100%;
+
+  // a,
+  td:first-child {
+    color: var(--Link-link-primary, #1b8354);
+    /* Text md/Regular */
+    font-family: var(--Font-Family-font-family-text, "IBM Plex Sans Arabic");
+    font-size: var(--Size-Text-typo-size-text-md, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--Line-Height-Text-line-heights-text-md, 24px);
+    text-decoration: none;
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+
+  thead {
+    th {
+      background: var(--Table-table-background-header, #f3f4f6);
+      color: var(--Table-table-text-head, #384250);
+      padding: 16px;
+      border: 1px solid #d2d6db;
+      /* Text xs/Medium */
+      font-family: var(--Font-Family-font-family-text, "IBM Plex Sans Arabic");
+      font-size: var(--Size-Text-typo-size-text-xs, 12px);
+      font-style: normal;
+      font-weight: 500;
+      line-height: var(--Line-Height-Text-line-heights-text-xs, 18px);
+      vertical-align: middle; // Add this line to center header text vertically
+
+      &:first-child,
+      &:last-child {
+        border-radius: 5px;
+      }
+    }
+  }
+
+  td {
+    border-top: 1px solid var(--Table-table-cell-border, #d2d6db);
+    border-bottom: 1px solid var(--Table-table-cell-border, #d2d6db);
+    padding: 20px 16px;
+    color: var(--Table-table-text-body, #161616);
+
+    /* Text md/Regular */
+    font-family: var(--Font-Family-font-family-text, "IBM Plex Sans Arabic");
+    font-size: var(--Size-Text-typo-size-text-md, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--Line-Height-Text-line-heights-text-md, 24px);
+    vertical-align: middle; // Add this line to center text vertically
+    text-wrap: nowrap;
+
+    /* 150% */
+    &:first-child {
+      &:lang(ar) {
+        border-right: 1px solid var(--Table-table-cell-border, #d2d6db);
+      }
+
+      &:lang(en) {
+        border-left: 1px solid var(--Table-table-cell-border, #d2d6db);
+      }
+    }
+
+    &:last-child {
+      &:lang(ar) {
+        border-left: 1px solid var(--Table-table-cell-border, #d2d6db);
+      }
+
+      &:lang(en) {
+        border-right: 1px solid var(--Table-table-cell-border, #d2d6db);
+      }
+    }
+  }
+
+  .custom__table__profile__img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+}

@@ -1,0 +1,403 @@
+// Variables
+@import "../../../assets/styles/helpers/variables";
+
+// Mixins
+@import "../../../assets/styles/helpers/mixins";
+
+/* Hide the default checkbox */
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #6c737f !important;
+  border-radius: 4px;
+  /* Rounded corners for checkbox */
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  background-color: white !important;
+  transition:
+    border-color 0.3s,
+    background-color 0.3s;
+  padding: 5px;
+}
+
+/* Checkmark for the checked state */
+input[type="checkbox"]::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-width: 0 2px 2px 0;
+  transform: rotate(180deg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%) rotate(45deg);
+  display: none;
+}
+
+/* Outer border and inner checkmark when checked */
+input[type="checkbox"]:checked {
+  /* outline: 2px solid #b9e3d5; */
+  border: 1px solid #1b8354 !important;
+  background-color: #1b8354 !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 13 11%27 width=%2713%27 height=%2711%27 fill=%27none%27%3e%3cpath d=%27M11.0426 1.02893C11.3258 0.695792 11.8254 0.655283 12.1585 0.938451C12.4917 1.22162 12.5322 1.72124 12.249 2.05437L5.51985 9.97104C5.23224 10.3094 4.72261 10.3451 4.3907 10.05L0.828197 6.88335C0.50141 6.59288 0.471975 6.09249 0.762452 5.7657C1.05293 5.43891 1.55332 5.40948 1.88011 5.69995L4.83765 8.32889L11.0426 1.02893Z%27 fill=%27%23ffffff%27/%3e%3c/svg%3e") !important;
+  /* --bs-form-check-bg-image: url("") !important; */
+  --bs-form-check-bg-image: none !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 14px !important;
+}
+
+input[type="checkbox"]:checked::before {
+  display: block;
+  /* Show checkmark */
+}
+
+.stepper-wrapper {
+
+  .mat-mdc-icon-button img,
+  .mat-mdc-icon-button svg {
+    color: $successColor !important;
+    padding-top: 0px !important;
+  }
+
+  .mat-mdc-form-field {
+    width: 100%;
+  }
+
+  .mat-mdc-form-field-icon-suffix {
+    margin-top: -12px !important;
+  }
+
+  [dir="rtl"] .mat-mdc-form-field-has-icon-suffix .mat-mdc-text-field-wrapper {
+    max-height: 40px !important;
+    border-radius: 6px !important;
+  }
+
+  .mat-mdc-text-field-wrapper {
+    max-height: 40px !important;
+    border-radius: 6px !important;
+  }
+
+  .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::before {
+    border-bottom-color: #fff;
+  }
+
+  .mat-mdc-text-field-wrapper {
+    padding: 0px !important;
+  }
+
+  .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color: transparent !important;
+    border: 1px solid $borderColor !important;
+    max-height: 50px !important;
+  }
+
+  .mdc-text-field--filled:hover:not(.mdc-text-field--disabled) {
+    background-color: transparent !important;
+    border: 1px solid $borderColor !important;
+    max-height: 50px !important;
+  }
+
+  .mat-mdc-form-field-infix {
+    padding-top: 10px !important;
+    width: unset !important;
+  }
+
+  .mat-mdc-icon-button .mat-mdc-button-ripple,
+  .mat-mdc-icon-button .mat-mdc-button-persistent-ripple,
+  .mat-mdc-icon-button .mat-mdc-button-persistent-ripple::before {
+    display: none !important;
+  }
+
+  .mdc-text-field {
+    border-radius: 4px !important;
+  }
+}
+
+.cdk-overlay-container {
+  // .mat-datepicker-popup {
+  //   @include rtl_value(left, unset !important, 150px !important);
+  //   @include rtl_value(right, 150px !important, unset !important);
+  // }
+
+  .mat-calendar-body-selected {
+    background-color: $successColor !important;
+  }
+
+.todayAvailable {
+    .mat-calendar-body-today:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical) {
+      border-color: $successColor !important;
+      color: $successColor !important;
+      background-color: #fff !important;
+    }
+  }
+
+  
+
+.todayDisable{
+    .mat-calendar-body-today:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical) {
+      // border-color: unset !important;
+      // color: unset !important;
+      color: var(--mat-datepicker-calendar-date-disabled-state-text-color) !important;
+      border-color: var(--mat-datepicker-calendar-date-today-disabled-state-outline-color) !important;
+      background-color: #fff !important;
+    }
+  }
+
+  .mat-calendar-body-cell:not(.mat-calendar-body-disabled):hover>.mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical) {
+    background-color: rgba($color: $successColor, $alpha: 0.3);
+  }
+
+  .mat-calendar-body-cell:not(.mat-calendar-body-disabled).mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical) {
+    background-color: rgba($color: $successColor, $alpha: 0.3);
+  }
+}
+
+.search__input {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    background-image: url("../../images/profile/search.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  input {
+    &:lang(ar) {
+      padding-right: 35px !important;
+    }
+
+    &:lang(en) {
+      padding-left: 35px !important;
+    }
+  }
+
+  &:lang(ar) {
+    &::after {
+      right: 10px;
+    }
+  }
+
+  &:lang(en) {
+    &::after {
+      left: 10px;
+    }
+  }
+}
+
+.form__layout {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 24px;
+  width: 100%;
+
+  .form__layout__input__group,
+  .input {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 8px;
+    transition: all 0.3s ease-in-out;
+    // position: relative;
+    margin: 0;
+
+    &:has(input[type="checkbox"]) {
+      flex-flow: row nowrap;
+
+      .form__layout__input__group__input {
+        height: 24px;
+        width: 24px;
+        display: unset;
+        padding: unset;
+      }
+
+      .form__layout__input__group__label {
+        color: var(--Text-text-display, #1f2a37);
+
+        /* Text md/Medium */
+        font-family: var(--Font-Family-font-family-text, "IBM Plex Sans Arabic");
+        font-size: var(--Size-Text-typo-size-text-md, 16px);
+        font-style: normal;
+        font-weight: 500;
+        line-height: var(--Line-Height-Text-line-heights-text-md, 24px);
+        /* 150% */
+      }
+
+      &:focus-within::after {
+        display: none;
+      }
+    }
+
+    .input-content {
+      margin: 0;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0px;
+        height: 2px;
+        z-index: 1;
+        transition: all 0.3s ease-in-out;
+        background-color: black;
+      }
+
+      &:focus-within::after {
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    &:has(input[type="date"], input[type="time"]) {
+      .form__layout__input__group__input {
+        display: unset;
+      }
+    }
+
+    .form__layout__input__group__input {
+      display: flex;
+      height: 40px;
+      padding: var(--Form-input-padding, 0px);
+      justify-content: flex-end;
+      align-items: center;
+      gap: var(--Form-input-gap, 0px);
+      flex-shrink: 0;
+      align-self: stretch;
+      border-radius: var(--Radius-radius-sm, 4px);
+      border: 1px solid #9da4ae;
+      background: var(--Form-field-background-default, #fff);
+      color: #161616;
+      padding: 8px 16px;
+      /* Text md/Regular */
+      font-family: "IBM Plex Sans Arabic";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      /* 150% */
+
+      &:lang(ar) {
+        text-align: right;
+      }
+
+      &:lang(en) {
+        text-align: left;
+      }
+
+      &::placeholder {
+        font-family: "IBM Plex Sans Arabic";
+      }
+
+      &:hover {
+        border-color: #384250;
+      }
+
+      &:focus {
+        border-color: #384250;
+        outline: none;
+      }
+    }
+  }
+
+  label {
+    color: var(--Form-field-text-label, #161616);
+    /* Text sm/Semibold */
+    font-family: "IBM Plex Sans Arabic";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    /* 142.857% */
+
+    .required {
+      color: var(--Form-field-border-error, #b42318);
+
+      /* Text sm/Semibold */
+      font-family: "IBM Plex Sans Arabic";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 20px;
+      /* 142.857% */
+    }
+  }
+
+  .textArea {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 8px;
+
+    &:lang(en) {
+      align-items: start;
+    }
+
+    &:has(textarea) {
+      textarea {
+        display: flex;
+        height: 96px;
+        padding: var(--Form-textarea-padding, 0px);
+        justify-content: flex-end;
+        align-items: center;
+        gap: var(--Form-textarea-gap, 0px);
+        align-self: stretch;
+        padding: var(--form-textarea-container-padding-top-bottom, 12px) var(--form-textarea-container-padding-left-right, 16px);
+        border-radius: var(--Radius-radius-sm, 4px);
+        border: 1px solid #9da4ae;
+        color: var(--Form-field-text-placeholder, #6c737f);
+
+        /* Text md/Regular */
+        font-family: var(--Font-Family-font-family-text, "IBM Plex Sans Arabic");
+        font-size: var(--Size-Text-typo-size-text-md, 16px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: var(--Line-Height-Text-line-heights-text-md, 24px);
+        width: 100%;
+      }
+    }
+  }
+
+  .form__layout__actions {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--Global-spacing-3xl, 24px);
+  }
+
+  .error {
+    color: #d12c2c;
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+
+// remove the arrow from input number
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="tel"] {
+  direction: ltr !important;
+}
+
+.toggler {
+  .switch {
+    display: flex !important;
+    align-items: center;
+  }
+}

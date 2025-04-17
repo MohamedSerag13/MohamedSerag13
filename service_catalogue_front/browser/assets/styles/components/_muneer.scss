@@ -1,0 +1,54 @@
+// Variables
+@import "../helpers/variables";
+
+//Mixins
+@import "../helpers/mixins";
+
+// Start style muneer tool
+.muneer-aside-is-open #muneer-sidebar.muneer-sidebar-left,
+.muneer-off-canvas-is-open-left #muneer-sidebar.muneer-sidebar-left {
+  &:lang(ar) {
+    left: 0;
+  }
+
+  &:lang(en) {
+    right: 0;
+    left: unset;
+  }
+}
+
+// hide button which could hide muneer tools
+#muneer-hide-btn {
+  display: none !important;
+}
+
+.muneer-trigger-button-box {
+  &:lang(ar) {
+    left: 35px !important;
+    right: unset;
+  }
+
+  &:lang(en) {
+    right: 35px !important;
+    left: unset;
+  }
+}
+
+  body.muneer-theme-light{
+    .muneer-palette-box .muneer-palette-expand,
+    .muneer-palette-box .muneer-palette-reset {
+      color: black;
+    }
+  }
+
+
+#muneer-popup-footer{
+  display: none !important;
+}
+
+#muneer-trigger-button{
+  &:hover{
+    border: 1px solid var(--muneer-color);
+  }
+}
+// end style muneer tool

@@ -1,0 +1,296 @@
+// Variables
+@import "../helpers/variables";
+
+//Mixins
+@import "../helpers/mixins";
+
+button.customBtn {
+  background: #fff;
+  min-height: 40px;
+  min-width: 144px;
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+  @include font(16px, 500);
+  @include bRadius(4px);
+  border: 0;
+  box-shadow: none;
+  outline: none;
+  padding: 3px 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  @media (max-width: 578px) {
+    min-width: 200px;
+  }
+  &.btn {
+    min-width: 95px;
+  }
+  &.btn-meduim {
+    min-width: 129px !important;
+    min-height: 49px !important;
+    padding: 0;
+    border-width: 1px !important;
+    font-weight: 400 !important;
+  }
+  // margin: 5px;
+  @include prefixer(transition, all 0.3s ease-in-out, webkit moz o ms);
+
+  &.block {
+    width: 100%;
+  }
+  &.primary,
+  &.active {
+    background: $primaryColor;
+    color: #fff;
+  }
+  &.primary-outline {
+    border: 1px solid $primaryColor;
+    color: $primaryColor;
+    background-color: #fff;
+    &:hover {
+      color: #fff;
+      background: $primaryColor;
+    }
+  }
+  &.secondary-outline {
+    border: solid 2px $secondaryColor;
+    color: $secondaryColor;
+    &:hover {
+      color: #fff;
+      background: $secondaryColor;
+    }
+  }
+  &.secondary {
+    background: $secondaryColor;
+    color: #fff;
+  }
+  &.transparent {
+    background: transparent;
+    border: 1px solid #ddd;
+  }
+  &.success {
+    background: $successColor;
+    color: #fff;
+  }
+  &.danger {
+    background: $dangerColor;
+    color: #fff;
+  }
+  &.blue {
+    background-color: #10164b;
+    color: #fff;
+  }
+  &.muted,
+  &.notActive {
+    background: #e3e2e2;
+    color: #333;
+  }
+  &.danger {
+    background: $dangerColor;
+    color: #fff;
+  }
+  &.dangerOutline {
+    border: solid 1px $dangerColor;
+    background-color: #fff5f5;
+    color: $dangerColor;
+    &:hover {
+      color: #fff;
+      background: $dangerColor;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    // background: rgba($secondaryColor, 0.8);
+    // color:#fff;
+  }
+  &:disabled,
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  &.black {
+    background-color: #000;
+    color: #fff;
+    border-radius: 8px;
+  }
+  &.outline-black {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 8px;
+  }
+
+  &.reverse {
+    color: $smallTextColor;
+    border: 1px solid #d2d6db;
+  }
+}
+
+.btn__base {
+  display: flex;
+  height: 40px;
+  min-height: 40px;
+  max-height: 40px;
+  padding: var(--Global-spacing-none, 0px) var(--Button-buttons-lg-padding, 16px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--Button-buttons-lg-gap, 4px);
+  border-radius: var(--Radius-radius-sm, 4px);
+  font-family: "IBM Plex Sans Arabic";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  width: fit-content;
+  // min-width: max-content;
+  min-width: 70px;
+  text-transform: capitalize;
+  text-wrap: nowrap;
+  &:lang(en) {
+    flex-flow: row-reverse;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+    padding: 0 8px;
+    height: 35px;
+    min-height: 35px;
+    max-height: 35px;
+
+    svg {
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 13px;
+    // padding: 0 4px;
+    // height: 30px;
+    // min-height: 30px;
+    // max-height: 30px;
+    padding: 0 8px;
+    height: 35px;
+    min-height: 35px;
+    max-height: 35px;
+    svg {
+      width: 14px;
+      height: 14px;
+    }
+  }
+}
+
+.btn__primary {
+  @extend .btn__base;
+  background: #1b8354;
+  border: none;
+  color: var(--Text-text-oncolor-primary, #fff);
+  outline-offset: -2px;
+
+  &:hover {
+    outline: 1px solid white;
+  }
+}
+
+.btn__secondary {
+  @extend .btn__base;
+  background: #fff;
+  border: 1px solid var(--Border-border-neutral-primary, #d2d6db);
+  color: var(--Text-text-default, #161616);
+
+  &:hover {
+    background: #d2d6db77;
+  }
+}
+
+.btn__gray {
+  @extend .btn__base;
+  background: #f3f4f6;
+  border: none;
+  color: #6c737f;
+
+  &:hover {
+    background-color: darken(#f3f4f6, 10%);
+  }
+}
+
+.btn__danger {
+  @extend .btn__base;
+  background: transparent;
+  border: none;
+  color: var(--Red, #de1f1f);
+  transition: outline 0.5s ease-in-out;
+
+  &:hover {
+    outline: 1px solid var(--Red, #de1f1f);
+  }
+}
+
+.btn__danger__border {
+  @extend .btn__base;
+  background: transparent;
+  // border: none;
+  border: 1px solid var(--Red, #de1f1f);
+  color: var(--Red, #de1f1f);
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background: #b50808;
+    color: #fff;
+  }
+}
+
+.btn__danger__solid {
+  @extend .btn__base;
+  border-radius: var(--Radius-radius-sm, 4px);
+  background: #b50808;
+  color: var(--Text-text-oncolor-primary, #fff);
+  border: none;
+
+  &:hover {
+    background-color: darken(#b50808, 10%);
+  }
+}
+
+.btn__trans {
+  @extend .btn__base;
+  background-color: transparent;
+  color: var(--Text-text-default, #161616);
+
+  border: none;
+
+  &:hover {
+    background-color: darken(#f3f4f6, 10%);
+  }
+}
+
+.btn__details {
+  @extend .btn__base;
+  height: 32px;
+  min-height: 32px;
+  max-height: 32px;
+  font-size: 14px;
+  padding: 0 12px;
+  width: fit-content;
+  background: #1b8354;
+  color: var(--Text-text-oncolor-primary, #fff);
+  border: none;
+  transition: all 0.2s ease-in-out;
+
+  @media screen and (max-width: 500px) {
+    font-size: 11px;
+  }
+  &:hover {
+    background-color: darken(#1b8354, 10%);
+  }
+}
